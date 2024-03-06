@@ -1,18 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { UsersService } from './services/users.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  constructor(private readonly _userData: UsersService) {}
-  inputText: string = ''
+export class AppComponent {
 
-    ngOnInit() {
-      /* const bata = this._userData.getUser('Hugo')
-      console.log('Ok é algo: ',bata) */
-  }
+  inputText: string = ''
 
 }
